@@ -59,7 +59,7 @@
     <main class="content container mt-4">
         <div class="row">
             <div class="col-md-6 ">
-                <div class="btn-group">
+                <div class="btn-group mb-3">
                     <button type="button" class="btn btn-secondary">Select A City</button>
                     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,7 +69,7 @@
                         <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
                     </ul>
                 </div>
-                <button class="btn btn-primary" id="btnAddEvent" data-bs-toggle="modal"
+                <button class="btn btn-primary mb-3" id="btnAddEvent" data-bs-toggle="modal"
                 data-bs-target="#myModal">Add Event</button>
                 <table class="table table-striped">
                     <tr>
@@ -242,8 +242,8 @@
         <td data-id="attendance"></td>
         <td data-id="eventDate"></td>
     </tr>
-
 </template>
+<!-- Dropdown Template -->
 <template id="dropdownItemTemplate">
     <li>
         <a class="dropdown-item" onclick="getEvents(this)"></a>

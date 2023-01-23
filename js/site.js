@@ -81,7 +81,7 @@ function buildDropDoun() {
     // filte the cityes to only DISTINCT city names
     let distintCities = [...new Set(eventCities)];
 
-    //get the tamplate from the page
+    //get the template from the page
     const template = document.getElementById('dropdownItemTemplate');
 
     //it represent the copy of the template from HTML
@@ -151,11 +151,11 @@ function calculateAverageMostLeast(eventsArray) {
 function displayEventData(eventsArray) {
 
     let tableBody = document.getElementById('eventTableBody')
-    const tableRowTamplate = document.getElementById('eventTableRowTemplate')
+    const tableRowTemplate = document.getElementById('eventTableRowTemplate')
     tableBody.innerHTML = '';
 
     for (let i = 0; i < eventsArray.length; i++) {
-        let eventRow = document.importNode(tableRowTamplate.content, true)
+        let eventRow = document.importNode(tableRowTemplate.content, true)
         let currentEvent = eventsArray[i]
         // eventRow.querySelector('[data-id="event"]')
         let tableCells = eventRow.querySelectorAll('td')
@@ -200,7 +200,7 @@ function getEvents(element) {
             }
         })
     }
-    // fileredEvents =currentEvent.filter(event => cityName ==event.city);
+    // fileredEvents =currentEvent.filter(event => cityName == event.city);
     document.getElementById('statsHeader').textContent = cityName;
     displayStats(fileredEvents);
     displayEventData(fileredEvents);
