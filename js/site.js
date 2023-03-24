@@ -91,7 +91,7 @@ function buildDropDoun() {
 
     //QuerySelector will take css selector it will take only first selector that match
     let menuItem = dropdownTemplateNode.querySelector('a');
-    //changet the content
+    //change the content
     menuItem.textContent = "All Cities";
     menuItem.setAttribute("data-string", "All");
 
@@ -112,7 +112,6 @@ function buildDropDoun() {
 }
 
 function displayStats(eventsArray) {
-    // let totalAttendance = calculateTotal(eventsArray)
     let stats = calculateAverageMostLeast(eventsArray)
 
     document.getElementById('total').textContent = stats.totalAttendance.toLocaleString(
@@ -219,7 +218,7 @@ function seveEventData() {
     eventDate = new Date(eventDate).toLocaleDateString();
 
     let stateSelect = document.getElementById('newEventState');
-    //option is in array of each element as an object 
+    //"option" is in array of each element as an object 
     let state = stateSelect.options[stateSelect.selectedIndex].text;
 
     let newEvent = {
