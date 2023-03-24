@@ -76,6 +76,8 @@ function buildDropDoun() {
     //pull out JUST the city name
     let eventCities = currEvents.map((event) => event.city);
 
+
+
     //set is an object that has a constructor of set and only use the distinct values
     //new is how we run the constructor and class
     // filte the cityes to only DISTINCT city names
